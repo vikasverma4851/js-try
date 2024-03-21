@@ -31,3 +31,37 @@ function loginUserMessage(username = "Abhay"){
 
 // console.log(loginUserMessage("Vikas"))
 // console.log(loginUserMessage())
+
+
+// ... Spread operator or ... Rest operator
+
+//Rest in parameters
+function calculateCartPrice(val1 ,val2,...num1){
+    return num1
+}
+
+//console.log(calculateCartPrice(200,654,132,48));
+
+const user = {
+    username: "Vikas",
+    price : 999
+} 
+
+function handleObject(anyObject){
+    console.log(`Username is ${anyObject.username} and price is${anyObject.price}`);
+}
+
+//handleObject(user)
+handleObject({
+    username : "Akash",
+    price : 1000
+})
+
+const myNewArray = [200, 345, 342, 354]
+
+function returnSecondValue(getArray){
+    return getArray[1]
+}
+
+//console.log(returnSecondValue(myNewArray))
+console.log(returnSecondValue([234,456,,567,32]));
